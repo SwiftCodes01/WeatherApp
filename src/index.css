@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Chivo", sans-serif;
+  background-image: url("./assets/bg-weather.png");
+  /* background-color: rgb(11, 20, 27);
+  background-blend-mode: overlay; */
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-weight: 100;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.weather {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Blurring the background */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: white; /* Text color for contrast */
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  /* border-bottom: 1px solid white; */
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  outline: none;
+  color: rgb(247, 247, 247);
+  font-size: 16px;
+  font-weight: 100;
+}
+.search::placeholder {
+  color: #fff;
+}
+.degree {
+  font-size: 70px;
+}
+.details {
+  margin-top: 30px;
+}
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
